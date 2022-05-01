@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_make_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tv_last_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textAllCaps="true"
+        android:text="@string/text_profile_photo"/>
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:id="@+id/tv_admin_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sub_text_profile_photo"
+            android:textColor="@color/black_text_color"
+            android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_upload_photo_camera"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/rounded_corner_btn_white"
+        android:text="@string/btn_upload_pic_camera"
+        android:textColor="@color/orange" />
+
+    <Button
+        android:id="@+id/btn_upload_photo_gallery"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/orange"
+        android:background="@drawable/rounded_corner_btn_white"
+        android:text="@string/btn_upload_pic_galery"
+        android:textColor="@color/orange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_show_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_photo_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAllCaps="true"
+            android:text="@string/text_photo_done"/>
+
+        <ImageView
+            android:id="@+id/img_preview"
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:background="#eeeeee"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/orange"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_redo"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/orange"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_continue"
+            android:textColor="@color/orange" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/choose_another_picture"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text_color"
+        android:text="Choose Another"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <!-- <ImageView
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"/>-->
+
+
+    <!--<LinearLayout
+        android:id="@+id/add_photo_layout"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#0062ff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Add photo"
+            android:textColor="@color/white" />
+    </LinearLayout>-->
+
+
+    <!--<LinearLayout
+        android:id="@+id/continue_layout"
+        android:clickable="true"
+        android:background="@color/green"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip For Now"/>
+    </LinearLayout>-->
+
+
+</RelativeLayout>

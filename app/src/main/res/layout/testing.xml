@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/DrawerItemStyle"
+            >
+
+            <ImageView
+                android:id="@+id/img_finding"
+                android:src="@drawable/ic_hook"
+                android:tint="@color/orange"
+                style="@style/DrawerImgStyle"
+                 />
+
+            <cu.inmobile.wara.Utils.BebasTextView
+                android:id="@+id/tv_finding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_finding"
+                style="@style/DrawerTextStyle"
+                android:text="Encuentra"
+                android:layout_alignParentTop="true"
+                 />
+
+            <cu.inmobile.wara.Utils.BebasTextView
+                android:id="@+id/tv_finding_count"
+                android:layout_width="@dimen/tv_drawer_count_dimen"
+                android:layout_height="@dimen/tv_drawer_count_dimen"
+                style="@style/DrawerCountTextStyle"
+                android:text="12"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

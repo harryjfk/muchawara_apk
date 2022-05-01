@@ -1,0 +1,2 @@
+1.0.0 -> Versión inicial
+1.0.1 -> Quitar el FB LOGIN

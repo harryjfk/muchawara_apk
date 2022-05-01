@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        tools:context="cu.inmobile.wara.Activities.FilterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:id="@+id/tv_finding_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_what_to_find"
+            />
+
+        <co.ceryle.radiorealbutton.RadioRealButtonGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/orange"
+            app:rrbg_backgroundColor="@color/orange"
+            app:rrbg_dividerColor="@color/white"
+            app:rrbg_dividerSize="1dp"
+            app:rrbg_radius="10dp"
+            app:rrbg_selectorColor="@color/white"
+            app:rrbg_borderColor="@color/white"
+            app:rrbg_selectorSize="4dp">
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableTint="@color/white"
+                app:rrb_drawableHeight="22dp"
+                app:rrb_drawablePadding="4dp"
+                app:rrb_drawableWidth="22dp"
+                app:rrb_ripple="true"
+                app:rrb_rippleColor="@color/white"
+                app:rrb_text="@string/gender_male"
+                app:rrb_textColor="@color/white"/>
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/radio_both"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                app:rrb_ripple="true"
+                app:rrb_rippleColor="@color/white"
+                app:rrb_text="@string/gender_both"
+                app:rrb_textColor="@color/white"/>
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableTint="@color/white"
+                app:rrb_drawableGravity="right"
+                app:rrb_drawableHeight="22dp"
+                app:rrb_drawablePadding="4dp"
+                app:rrb_drawableWidth="22dp"
+                app:rrb_ripple="true"
+                app:rrb_rippleColor="@color/white"
+                app:rrb_text="@string/gender_female"
+                app:rrb_textColor="@color/white"/>
+
+        </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_filter_age"
+            />
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:id="@+id/tv_age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:text="Show me people aged 18 to 58"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+            android:id="@+id/bar_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:bar_color="@color/white"
+            app:bar_highlight_color="@color/yellow"
+            app:left_thumb_image="@drawable/thumb"
+            app:left_thumb_color="@color/white"
+            app:left_thumb_color_pressed="@color/yellow"
+            app:left_thumb_image_pressed="@drawable/thumb"
+            app:max_start_value="40"
+            app:max_value="78"
+            app:min_start_value="18"
+            app:min_value="18"
+            app:right_thumb_image="@drawable/thumb"
+            app:right_thumb_color="@color/white"
+            app:right_thumb_color_pressed="@color/yellow"
+            app:right_thumb_image_pressed="@drawable/thumb" />
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_filter_where"
+            />
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:id="@+id/age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="1dp"
+            android:text="@string/text_filter_city"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_filter_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:lines="1"
+        android:singleLine="true"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_continue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_continue"
+            android:textColor="@color/orange" />
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        />
+
+    </RelativeLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="@color/yellow"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="3"
+        app:rb_scale="6">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhotoUser"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_no_photo" />
+
+        <TextView
+            android:id="@+id/no_match_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/centerImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/no_match_found_near_you"
+            android:visibility="gone" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+    <LinearLayout
+        android:id="@+id/housing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/housing_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <in.arjsna.swipecardlib.SwipeCardView
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="45dp"
+                app:bottom_swipe_detect="false"
+                app:max_visible="1"
+                app:min_adapter_stack="1"
+                app:rotation_degrees="15.5"
+                app:top_swipe_detect="false" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/ib_dislike_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_like_not"
+            android:layout_marginRight="8dp"
+            app:elevation="4dp"
+            />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/ib_like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_like"
+            android:layout_marginLeft="8dp"
+            app:elevation="4dp"
+            />
+
+
+
+
+
+            <!--<android.support.design.widget.FloatingActionButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_like_not"
+                android:elevation="0dp"
+                android:id="@+id/btn_dislike"
+                android:clickable="true"
+                android:scaleType="fitStart"
+                app:fabSize="normal"
+                 />
+
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_like"
+                    android:elevation="0dp"
+                    android:id="@+id/like_button"
+                    app:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    app:fabSize="normal"
+                     />-->
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart_patch"
+
+            />
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/orange"
+            android:text="@string/no_match_found_near_you"
+            />
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/no_match_found_near_you_explanation"
+            />
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_filter"
+            android:textColor="@color/orange" />
+
+        <!--<cu.inmobile.wara.Utils.RalenwayTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/no_match_found_liked_you"
+            />
+
+        <Button
+            android:id="@+id/btn_liked_you"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/text_liked_you"
+            android:textColor="@color/orange" />
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/no_match_found_wara"
+            />
+
+        <Button
+            android:id="@+id/btn_wara"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/text_wara"
+            android:textColor="@color/orange" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_not_credits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_credits"
+            android:tint="@color/yellow"
+            android:layout_marginBottom="30dp"
+
+            />
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/orange"
+            android:text="@string/no_credits"
+            />
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:id="@+id/tv_time_to_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/no_credits_expl"
+            />
+
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_reload"
+            android:textColor="@color/orange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wara_aqui"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPhotoUser1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_no_photo" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgPhotoUser2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_no_photo" />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_chat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_chat"
+            android:textColor="@color/orange" />
+
+        <Button
+            android:id="@+id/btn_keep_looking"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/rounded_corner_btn_white"
+            android:text="@string/btn_keep_looking"
+            android:textColor="@color/orange" />
+
+    </LinearLayout>
+
+</RelativeLayout>

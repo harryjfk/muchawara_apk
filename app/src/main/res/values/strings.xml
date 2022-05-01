@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN -->
+
+    <string name="app_name">Wara</string>
+    <string name="unknow">...</string>
+    <string name="version_name">V:1.2.0</string>
+    <string name="os_name">android</string>
+    <string name="facebook_app_id">156443168550282</string>
+    <string name="google_places_app_id">AIzaSyBfpilpvcuFQpG5Kacl-OoPpTZCau_hLq0</string>
+
+    <string name="title_activity_display">DisplayActivity</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="btn_registration">Regístrate</string>
+    <string name="btn_login">Entrar</string>
+    <string name="text_login_explication_main">Es tu primera vez ?</string>
+    <string name="text_register_explication_main">Ya tienes cuenta ?</string>
+
+    <!-- DIALOGS -->
+    <string name="text_loading">Cargando...</string>
+    <string name="text_loading_fb">Intentando loguarse a través de Facebook</string>
+    <string name="text_login">Mandando información de LOGIN</string>
+    <string name="text_filter">Cargando tus preferencias de búsqueda.</string>
+    <string name="text_filter_save">Guardando tus preferencias de búsqueda.</string>
+    <string name="text_credit_recharge">Recargando...</string>
+    <string name="text_profile">Cargando la información.\nTe gustará ?</string>
+    <string name="text_loading_chat">Estamos cargando el CHAT\n...chat, chatea, satea...</string>
+    <string name="report_tittle">Qué no te gusta ?</string>
+    <string name="report_message">Si el reporte es aceptado obtendrás 5 oportunidades de evaluar.</string>
+    <string name="report_message_send">Reporte enviado satisfactoriamente.</string>
+    <string name="report_message_send_error">El Reporte no pudo ser enviado, intentelo más tarde.</string>
+    <string name="report_op_1">Simplemente no me gusta</string>
+    <string name="report_op_2">Tiene una actitud violenta</string>
+    <string name="report_op_3">Las fotos están muy calientes</string>
+    <string name="report_op_4">Las fotos son falsas</string>
+    <string name="report_op_5">El perfil es falso</string>
+    <string name="report_op_6">Otras razones</string>
+    <string name="report_ok">Reportar</string>
+    <string name="report_cancel">Cancelar</string>
+    <string name="dialog_city_tittle">Deja que sepan de dónde eres !</string>
+    <string name="dialog_city_message">Edita tu ciudad en la vista del perfil para salir en las búsquedas realizadas en esa zona.</string>
+    <string name="dialog_city_button">Ir al perfil</string>
+
+
+    <!-- NOTIFICATION -->
+    <string name="channel_name">Wara NOTOFICATIONS</string>
+    <string name="channel_description">Used to manage Wara PUSH NOTIFICATIONS.</string>
+    <string name="notification_new_message">Tienes nuevos mensajes !</string>
+    <string name="notification_new_message_text">Has recibido un nuevo mensaje de alguien en WARA ;)</string>
+
+
+
+    <!-- LOGIN ACTIVITY -->
+    <string name="title_login">Entrar</string>
+    <string name="text_email">Email</string>
+    <string name="text_pass">Password</string>
+    <string name="text_login_pass_error">Debe llenar el campo PASSWORD</string>
+    <string name="text_login_email_error">Debe llenar el campo EMAIL</string>
+    <string name="text_login_valid_email_error">Debe introducir un EMAIL correcto</string>
+    <string name="text_login_explication">Ya te registraste ?\nIntroduce tus datos para comenzar.</string>
+    <string name="btn_login_in">Entra YA !</string>
+
+    <!-- REGISTER ACTIVITY -->
+    <string name="text_name">Nombre</string>
+    <string name="text_lastname">Apellidos</string>
+    <string name="text_register_explication">\nIntroduce tus datos para comenzar.</string>
+    <string name="gender_male">HOMBRE</string>
+    <string name="gender_female">MUJER</string>
+    <string name="gender_both">AMBOS</string>
+    <string name="text_country">País</string>
+    <string name="text_city">Ciudad</string>
+    <string name="text_pass_confirm">Confirma el password</string>
+    <string name="text_birthday">Fecha de nacimiento</string>
+    <string name="text_name_error">Escribe tu nombre</string>
+    <string name="text_email_error">Escribe tu email</string>
+    <string name="text_valid_email_error">El formato del email no es correcto</string>
+    <string name="text_city_error">Escribe el nombre de la ciudad donde vives</string>
+    <string name="text_wrong_city_error">Debe escoger una ciudad del listado que se le muestra </string>
+    <string name="text_country_error">Escribe el nombre del país donde vives</string>
+    <string name="text_dob_error">Selecciona una fecha de nacimiento</string>
+    <string name="text_gender_error">Selecciona un género</string>
+    <string name="text_pass_error">Escribe un password</string>
+    <string name="text_pass2_error">Confirme su password</string>
+    <string name="text_pass_length_error">El pass debe tener 8 caracteres</string>
+    <string name="text_pass_pass2_error">Los passwords no coinciden</string>
+    <string name="text_registering">Ya estamos registrándote ! \nPronto empezarás a hacer WARA !!!</string>
+    <string name="text_registering_success">Te registraste correctamente !</string>
+    <string name="text_maps_google">O utiliza los servicios de Google</string>
+    <string name="text_edit_city">Ej: Cuba, La Habana</string>
+
+    <!-- SET PROFILE PHOTO ACTIVITY -->
+    <string name="text_profile_photo">Una última cosa\n Sube una foto</string>
+    <string name="sub_text_profile_photo">Que sea tuya\n y se te vea el rostro</string>
+    <string name="text_photo_done">Listo ?</string>
+    <string name="btn_upload_pic_camera">Hacer foto</string>
+    <string name="btn_upload_pic_galery">Subir foto</string>
+    <string name="btn_redo">Rehacer foto</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="text_testing">Esta versión de la app está en pruebas. Por favor informe cualquier error detectado.</string>
+
+
+
+    <!-- DRAWER -->
+    <string name="text_finding">Encuentra</string>
+    <string name="text_wara">Wara</string>
+    <string name="text_chat">Chat</string>
+    <string name="text_liked_you">Admiradores</string>
+
+
+    <!-- FILTER -->
+    <string name="text_what_to_find">Dime qué deseas buscar</string>
+    <string name="text_filter_age">Edad</string>
+    <string name="text_filter_where">De dónde ?</string>
+    <string name="text_filter_city">Empieza a escribir y selecciona una propuesta</string>
+    <string name="text_filter_city_explanation">Empieza a escribir y selecciona una propuesta</string>
+    <string name="text_filter_age_text1">Personas con edad de </string>
+    <string name="text_filter_age_text2">a</string>
+
+    <!-- ENCOUNTER -->
+    <string name="no_match_found_near_you">No queda nadie\ncon quien hacer\nwara</string>
+    <string name="no_match_found_near_you_explanation">Intenta cambiar tus filtros de búsqueda.\nTambién puedes ir a otras secciones desde el menú de navegación que se encuentra arriba a la izquierda.</string>
+    <string name="no_match_found_wara">O ir a la sección principal</string>
+    <string name="no_credits_expl">Las recargas se realizarán cada 6 horas.</string>
+    <string name="no_credits">Ya no te quedan\nespera a la próxima\nrecarga</string>
+    <string name="btn_reload">Recargar</string>
+    <string name="btn_filter">Filtro</string>
+    <string name="btn_chat">Chatear</string>
+    <string name="btn_keep_looking">Sigue encontrando</string>
+
+    <!-- TOAST -->
+    <string name="toast_no_cnx">No hay conexión a Internet !</string>
+    <string name="toast_mail_error">El correo introducido ya está en uso. Intente con uno distinto.</string>
+    <string name="toast_bad_answer">No se pudo comunicar con el servidor. Compruebe su conexión y vuelva a intentarlo</string>
+    <string name="toast_get_bullets">Has recargado satisfactoriamente.</string>
+    <string name="toast_get_bullets_error">No se han obtenido balas, espere el tiempo requerido.</string>
+    <string name="toast_auth_error">El usuario y la contraseña no son correctos !</string>
+    <string name="toast_auth_user_error">El usuario no está registrado !</string>
+    <string name="toast_auth_pass_error">El contraseña ingresada no es correcta !</string>
+    <string name="toast_conx_error">Ha ocurrido un error al acceder al servidor.\nIntenta nuevamente !</string>
+    <string name="toast_dialog_updating">Tus datos se han actualizado correctamente </string>
+    <string name="toast_dialog_dislike">Has dejado la wara correctamente </string>
+    <string name="toast_dialog_updating_error">NO se ha podido realizar la actualización</string>
+    <string name="toast_credit_error">Todavía no puedes recargar.\nLos tiempos de recargan serán cada 6 horas\n(00:00 , 06:00 , 12:00 , 18:00)</string>
+    <string name="toast_error_web">Lo sentimos pero no hemos podido realizar esta acción.\nIntente actualizar la aplicación</string>
+    <string name="toast_filter_saved">Tus preferencias han sido guardadas !</string>
+    <string name="toast_google_services_error">Debes actualizar los servicios de GOOGLE para usar esta opción.\nIntenta esribir tu ciudad directamente en el campo.</string>
+
+
+    <!-- PROFILE -->
+    <string name="profile_add_photo">Agregar</string>
+    <string name="toast_name_error">Su nombre es demasiado corto.</string>
+    <string name="profile_location">Ciudad</string>
+    <string name="profile_about_me">Acerca de ti...</string>
+    <string name="btn_logout">Desloguearse</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_about_me_blank_text">Estoy pa Wara !</string>
+    <string name="btn_report">Reportar</string>
+    <string name="btn_deja_wara">Deja la wara</string>
+    <string name="btn_see_profile">Ver el perfil</string>
+    <string name="text_dialog_about_tittle">Estoy pa Wara !</string>
+    <string name="text_dialog_about_message">Gustos músicales, hobbies, talentos...\nEsto te ayudará a atraer más personas</string>
+    <string name="btn_dialog_about_update">Actualizar</string>
+    <string name="text_dialog_updating_tittle">Actualizando tu estado</string>
+    <string name="text_dialog_updating_message">Ahora las personas conoceran un poco más de ti.</string>
+    <string name="text_popularity_low">Bajo</string>
+    <string name="text_popularity_medium">Medio</string>
+    <string name="text_popularity_high">Alto</string>
+    <string name="text_popularity_mango">Mango</string>
+    <string name="text_loading_profile">Cargando tu información.\nPodrás editar todos los campos.</string>
+    <string name="text_saving_profile">Guardando tu información.\nAhora las personas podrán verla.</string>
+    <string name="text_saving_filter">Guardando tu filtro de búsqueda.\nAhora podrás encontrar a tu preferencia.</string>
+    <string name="profile_location_text">Inserta tu ciudad</string>
+    <string name="alert_profile_save">Presione guardar para salvar los cambios</string>
+
+
+
+    <!-- LIKED YOU -->
+    <string name="text_liked_you_explanation">A estas personas ya le gustas</string>
+    <string name="text_liked_you_explanation2">Si las apruebas harás WARA,\npero no podrás ver su foto.\nTe atreves ?</string>
+    <string name="text_liked_you__empty">A nadie le has gustado\nPor ahora</string>
+
+    <!-- WARA -->
+    <string name="text_wara_explanation">Nuestra parte ya está hecha</string>
+    <string name="text_wara_explanation2">Es tu turno de llegar a algo más</string>
+    <string name="text_wara__empty">No tienes Wara con nadie\nPor ahora</string>
+
+    <!-- CHAT -->
+    <string name="text_chat_no_msg">Sin mensajes</string>
+    <string name="text_chat_no_msg_hint">Debes hacer WARA antes\npara poder escribir</string>
+    <string name="btn_finding">Buscar WARA</string>
+
+    <!-- MENU -->
+    <string name="action_settings">Preferencias de búsqueda</string>
+    <string name="action_refresh">Recargar</string>
+    <string name="action_preferences">Preferencias</string>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
+    <string-array name="report_reasons">
+        <item>@string/report_op_1</item>
+        <item>@string/report_op_2</item>
+        <item>@string/report_op_3</item>
+        <item>@string/report_op_4</item>
+        <item>@string/report_op_5</item>
+        <item>@string/report_op_6</item>
+    </string-array>
+</resources>

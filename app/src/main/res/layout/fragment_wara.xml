@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cu.inmobile.wara.Fragments.LikedYouFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <cu.inmobile.wara.Utils.BebasTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/DrawerTextStyle"
+            android:text="@string/text_wara_explanation"
+            />
+
+        <cu.inmobile.wara.Utils.RalenwayTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/text_wara_explanation2"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <cu.inmobile.wara.Utils.BebasTextView
+        android:id="@+id/tv_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/img_finding"
+        style="@style/DrawerTextStyle"
+        android:text="@string/text_wara__empty"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_wara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_explanation"
+        android:layout_marginTop="10dp"
+
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+</RelativeLayout>

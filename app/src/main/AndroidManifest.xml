@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cu.inmobile.wara"
+    android:windowSoftInputMode="stateAlwaysHidden"
+    >
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:name=".Applications.WaraApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_places_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ba7be5a6a21b0609435dff2fb05c0e1843c29ab6" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Activities.DisplayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.FilterActivity"
+            android:label="Filter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activities.ProfileViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ChatHistoryActivity"
+            android:label="Messages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BasicInfoActivity"
+            android:label="Basic info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AccountActivity"
+            android:label="Account"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.PeopleNearbyActivity" />
+        <activity
+            android:name=".Activities.ActivityPageActivity"
+            android:label="Activity"
+            android:screenOrientation="portrait" />
+
+        <!-- Popularity Activity -->
+        <activity
+            android:name=".Activities.PopularityActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Gift Activity -->
+        <activity
+            android:name=".Activities.GiftActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Refill Credits Activity -->
+        <activity
+            android:name=".Activities.RefillCreditsActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Stripe Payment Activity -->
+        <activity
+            android:name=".Activities.StripePaymentActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Super Power Activity -->
+        <activity
+            android:name=".Activities.SuperPowerActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait" />
+
+        <!-- Register Activity -->
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:label="Popularity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_places_app_id" />
+        </activity>
+
+        <!-- Set profile picture Activity -->
+        <activity
+            android:name=".Activities.SetProfilePictureActivity"
+            android:label="Upload Profile Picture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".Services.PushNotificationService"
+            android:exported="false" />
+        <service
+            android:name=".Services.ChatService"/>
+        <service
+            android:name=".Services.WaraService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
+    </application>
+
+</manifest>
